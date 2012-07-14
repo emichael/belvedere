@@ -82,7 +82,7 @@ Section "Installation" secApp
   SetOutPath "$INSTDIR"
   SetOverwrite ifnewer
   File Belvedere.exe
-  File LICENSE.txt
+  File ..\LICENSE.txt
   SetOutPath "$INSTDIR\resources"
   File "${PRODUCT_HELP_TEXT}"
   File 7za.exe
