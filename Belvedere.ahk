@@ -130,7 +130,7 @@ Loop
 			;Loop to read the subjects, verbs and objects for the list defined
 			Loop
 			{
-				if ((A_Index-1) = NumOfRules)
+				if ((A_Index-1) >= NumOfRules)
 					break
 
 				if (A_Index = 1)

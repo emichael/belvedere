@@ -75,7 +75,7 @@ AddRule:
 	Gui, 2: Add, Checkbox, x482 y252 vCompress, Compress?
 	Gui, 2: Add, Button, x32 y302 w100 h30 vTestButton gTESTMatches, Test
 	Gui, 2: Add, Button, x372 y302 w100 h30 vOKButton gSaveRule, OK
-	Gui, 2: Add, Button, x482 y302 w100 h30 vCancelButton gGui2Close, Cancel
+	Gui, 2: Add, Button, x482 y302 w100 h30 vCancelButton g2GuiClose, Cancel
 	
 	Len := StrLen(ActiveFolder) - 60 
 	if (Len > 0)
@@ -250,7 +250,7 @@ EditRule:
 	Gosub, SetDestination
 	Gui, 2: Add, Button, x32 y302 w100 h30 vTestButton gTESTMatches, Test
 	Gui, 2: Add, Button, x372 y302 w100 h30 vOKButton gSaveRule, OK
-	Gui, 2: Add, Button, x482 y302 w100 h30 vCancelButton gGui2Close, Cancel
+	Gui, 2: Add, Button, x482 y302 w100 h30 vCancelButton g2GuiClose, Cancel
 
 	GuiControl, 2: Move, Exclusions,  % "y" (NumOfRules-1) * 30 + 202
 	GuiControl, 2: Move, AttribReadOnly,  % "y" (NumOfRules-1) * 30 + 202
@@ -276,7 +276,7 @@ EditRule:
 return
 
 ;Destroys the create/edit rule dialog when closed
-Gui2Close:
+2GuiClose:
 	Gui, 1: -Disabled
 	Gui, 2: Destroy
 return
