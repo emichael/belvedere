@@ -155,7 +155,7 @@ Loop
 			{
 				Loop
 				{
-					if ((A_Index - 1) = NumOfRules)
+					if ((A_Index - 1) >= NumOfRules)
 						break
 
 					if (A_Index = 1)
