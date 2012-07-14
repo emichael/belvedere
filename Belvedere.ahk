@@ -2,7 +2,7 @@
  * * * Compile_AHK SETTINGS BEGIN * * *
 
 [AHK2EXE]
-Exe_File=%In_Dir%\Belvedere.exe
+Exe_File=%In_Dir%\installer\Belvedere.exe
 No_UPX=1
 Created_Date=1
 Execution_Level=2
@@ -14,7 +14,6 @@ Inc_File_Version=0
 Internal_Name=Belvedere
 Product_Name=Belvedere
 Product_Version=1.1.7.1
-Set_AHK_Version=1
 [ICONS]
 Icon_1=%In_Dir%\resources\belvedere.ico
 Icon_2=%In_Dir%\resources\belvedere.ico
